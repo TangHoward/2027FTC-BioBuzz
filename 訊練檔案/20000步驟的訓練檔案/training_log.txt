@@ -1,0 +1,589 @@
+============================================================
+LIMELIGHT MODEL TRAINER
+============================================================
+
+Job ID: 2183ef5f
+Spinning up 1 NVIDIA H100 GPU...
+
+Steps: 20000, Batch size: 16, Platform: coral
+
+STAGE 1/6: Downloading dataset...
+  Downloading from Google Drive...
+  Downloaded: 2548.42 MB
+  Extracting dataset...
+  Archive contains 7 files
+  Scanning for TFRecords and label map...
+    Found label map: test/FTC-BioBuzz_label_map.pbtxt
+    Found train record: train/FTC-BioBuzz.tfrecord
+    Found label map: train/FTC-BioBuzz_label_map.pbtxt
+    Found val record: valid/FTC-BioBuzz.tfrecord
+    Found label map: valid/FTC-BioBuzz_label_map.pbtxt
+
+STAGE 2/6: Loading pretrained model...
+  Pretrained model ready
+
+STAGE 3/6: Configuring training pipeline...
+  Detected 3 classes: ['Blue', 'Red', 'Yellow']
+
+STAGE 4/6: Training model...
+----------------------------------------
+  Starting validation evaluation thread...
+  Validation thread started (will evaluate at each checkpoint)
+  Progress check #1: No loss data yet
+  Progress check #2: No loss data yet
+  Progress check #3: No loss data yet
+  Progress check #4: No loss data yet
+    Train event files: ['events.out.tfevents.1790351468.modal.2.0.v2']
+  Progress check #5: No loss data yet
+    Train event files: ['events.out.tfevents.1790351468.modal.2.0.v2']
+  TensorBoard train tags: ['train_input_images', 'steps_per_sec', 'Loss/localization_loss', 'Loss/classification_loss', 'Loss/regularization_loss', 'Loss/total_loss', 'learning_rate']
+  Step 50/20000 - Train Loss: 0.6283
+  Step 75/20000 - Train Loss: 0.4001
+  TensorBoard val tags: ['eval_side_by_side_0_0', 'eval_side_by_side_1_0', 'eval_side_by_side_2_0', 'eval_side_by_side_3_0', 'eval_side_by_side_4_0', 'eval_side_by_side_5_0', 'eval_side_by_side_6_0', 'eval_side_by_side_7_0', 'eval_side_by_side_8_0', 'eval_side_by_side_9_0']
+  Step 125/20000 - Train Loss: 0.2937 | Val: 0.8979
+  Step 150/20000 - Train Loss: 0.2300 | Val: 0.8979
+  Step 200/20000 - Train Loss: 0.3386 | Val: 0.8979
+  Step 250/20000 - Train Loss: 0.1827 | Val: 0.8979
+  Step 275/20000 - Train Loss: 0.3367 | Val: 0.8979
+  Step 325/20000 - Train Loss: 0.1591 | Val: 0.8979
+  Step 350/20000 - Train Loss: 0.2031 | Val: 0.8979
+  Step 400/20000 - Train Loss: 0.1975 | Val: 0.8979
+  Step 425/20000 - Train Loss: 0.1677 | Val: 0.8979
+  Step 475/20000 - Train Loss: 0.1305 | Val: 0.8979
+  Step 525/20000 - Train Loss: 0.1032 | Val: 0.8979
+  Step 550/20000 - Train Loss: 0.0829 | Val: 0.8979
+  Step 600/20000 - Train Loss: 0.1995 | Val: 0.8979
+  Step 625/20000 - Train Loss: 0.1629 | Val: 0.8979
+  Step 675/20000 - Train Loss: 0.1290 | Val: 0.8979
+  Step 700/20000 - Train Loss: 0.1465 | Val: 0.1733
+  Step 750/20000 - Train Loss: 0.1237 | Val: 0.1733
+  Step 800/20000 - Train Loss: 0.1066 | Val: 0.1733
+  Step 825/20000 - Train Loss: 0.1304 | Val: 0.1733
+  Step 875/20000 - Train Loss: 0.1124 | Val: 0.1733
+  Step 900/20000 - Train Loss: 0.1144 | Val: 0.1733
+  Step 950/20000 - Train Loss: 0.0932 | Val: 0.1733
+  Step 975/20000 - Train Loss: 0.0946 | Val: 0.1733
+  Step 1025/20000 - Train Loss: 0.1218 | Val: 0.1733
+  Step 1075/20000 - Train Loss: 0.0865 | Val: 0.1733
+  Step 1100/20000 - Train Loss: 0.1256 | Val: 0.1733
+  Step 1150/20000 - Train Loss: 0.1168 | Val: 0.1733
+  Step 1175/20000 - Train Loss: 0.0960 | Val: 0.1733
+  Step 1225/20000 - Train Loss: 0.1152 | Val: 0.1228
+  Step 1250/20000 - Train Loss: 0.1172 | Val: 0.1228
+  Step 1300/20000 - Train Loss: 0.1246 | Val: 0.1228
+  Step 1350/20000 - Train Loss: 0.0776 | Val: 0.1228
+  Step 1375/20000 - Train Loss: 0.0907 | Val: 0.1228
+  Step 1425/20000 - Train Loss: 0.0702 | Val: 0.1228
+  Step 1450/20000 - Train Loss: 0.1510 | Val: 0.1228
+  Step 1500/20000 - Train Loss: 0.1393 | Val: 0.1228
+  Step 1525/20000 - Train Loss: 0.0771 | Val: 0.1228
+  Step 1575/20000 - Train Loss: 0.0767 | Val: 0.1228
+  Step 1625/20000 - Train Loss: 0.1078 | Val: 0.1228
+  Step 1650/20000 - Train Loss: 0.1176 | Val: 0.1228
+  Step 1700/20000 - Train Loss: 0.0439 | Val: 0.1066
+  Step 1725/20000 - Train Loss: 0.0772 | Val: 0.1066
+  Step 1775/20000 - Train Loss: 0.0704 | Val: 0.1066
+  Step 1800/20000 - Train Loss: 0.0630 | Val: 0.1066
+  Step 1850/20000 - Train Loss: 0.0611 | Val: 0.1066
+  Step 1900/20000 - Train Loss: 0.0606 | Val: 0.1066
+  Step 1925/20000 - Train Loss: 0.0849 | Val: 0.1066
+  Step 1975/20000 - Train Loss: 0.0833 | Val: 0.1066
+  Step 2000/20000 - Train Loss: 0.1294 | Val: 0.1066
+  Step 2050/20000 - Train Loss: 0.0919 | Val: 0.1066
+  Step 2075/20000 - Train Loss: 0.1091 | Val: 0.1066
+  Step 2125/20000 - Train Loss: 0.0474 | Val: 0.1066
+  Step 2175/20000 - Train Loss: 0.0337 | Val: 0.1066
+  Step 2200/20000 - Train Loss: 0.1180 | Val: 0.1066
+  Step 2250/20000 - Train Loss: 0.0663 | Val: 0.0944
+  Step 2275/20000 - Train Loss: 0.0980 | Val: 0.0944
+  Step 2325/20000 - Train Loss: 0.0982 | Val: 0.0944
+  Step 2350/20000 - Train Loss: 0.0963 | Val: 0.0944
+  Step 2400/20000 - Train Loss: 0.0417 | Val: 0.0944
+  Step 2450/20000 - Train Loss: 0.0570 | Val: 0.0944
+  Step 2475/20000 - Train Loss: 0.0361 | Val: 0.0944
+  Step 2525/20000 - Train Loss: 0.0847 | Val: 0.0944
+  Step 2550/20000 - Train Loss: 0.0968 | Val: 0.0944
+  Step 2600/20000 - Train Loss: 0.0836 | Val: 0.0944
+  Step 2625/20000 - Train Loss: 0.0572 | Val: 0.0944
+  Step 2675/20000 - Train Loss: 0.0804 | Val: 0.0944
+  Step 2725/20000 - Train Loss: 0.0708 | Val: 0.0902
+  Step 2750/20000 - Train Loss: 0.0828 | Val: 0.0902
+  Step 2800/20000 - Train Loss: 0.0844 | Val: 0.0902
+  Step 2825/20000 - Train Loss: 0.1422 | Val: 0.0902
+  Step 2875/20000 - Train Loss: 0.0730 | Val: 0.0902
+  Step 2900/20000 - Train Loss: 0.0335 | Val: 0.0902
+  Step 2950/20000 - Train Loss: 0.0827 | Val: 0.0902
+  Step 3000/20000 - Train Loss: 0.0741 | Val: 0.0902
+  Step 3025/20000 - Train Loss: 0.0854 | Val: 0.0902
+  Step 3075/20000 - Train Loss: 0.1077 | Val: 0.0902
+  Step 3100/20000 - Train Loss: 0.0655 | Val: 0.0902
+  Step 3150/20000 - Train Loss: 0.0922 | Val: 0.0902
+  Step 3175/20000 - Train Loss: 0.0607 | Val: 0.0902
+  Step 3225/20000 - Train Loss: 0.0842 | Val: 0.0862
+  Step 3275/20000 - Train Loss: 0.0953 | Val: 0.0862
+  Step 3300/20000 - Train Loss: 0.0719 | Val: 0.0862
+  Step 3350/20000 - Train Loss: 0.0829 | Val: 0.0862
+  Step 3375/20000 - Train Loss: 0.0540 | Val: 0.0862
+  Step 3425/20000 - Train Loss: 0.0564 | Val: 0.0862
+  Step 3450/20000 - Train Loss: 0.1505 | Val: 0.0862
+  Step 3500/20000 - Train Loss: 0.0729 | Val: 0.0862
+  Step 3550/20000 - Train Loss: 0.0519 | Val: 0.0862
+  Step 3575/20000 - Train Loss: 0.1052 | Val: 0.0862
+  Step 3625/20000 - Train Loss: 0.0657 | Val: 0.0862
+  Step 3650/20000 - Train Loss: 0.0492 | Val: 0.0862
+  Step 3700/20000 - Train Loss: 0.0708 | Val: 0.0862
+  Step 3725/20000 - Train Loss: 0.1090 | Val: 0.0837
+  Step 3775/20000 - Train Loss: 0.0452 | Val: 0.0837
+  Step 3825/20000 - Train Loss: 0.0888 | Val: 0.0837
+  Step 3850/20000 - Train Loss: 0.0782 | Val: 0.0837
+  Step 3900/20000 - Train Loss: 0.0698 | Val: 0.0837
+  Step 3925/20000 - Train Loss: 0.0712 | Val: 0.0837
+  Step 3975/20000 - Train Loss: 0.0813 | Val: 0.0837
+  Step 4000/20000 - Train Loss: 0.0846 | Val: 0.0837
+  Step 4050/20000 - Train Loss: 0.0437 | Val: 0.0837
+  Step 4100/20000 - Train Loss: 0.0491 | Val: 0.0837
+  Step 4125/20000 - Train Loss: 0.1106 | Val: 0.0837
+  Step 4175/20000 - Train Loss: 0.1407 | Val: 0.0837
+  Step 4200/20000 - Train Loss: 0.0502 | Val: 0.0837
+  Step 4250/20000 - Train Loss: 0.0625 | Val: 0.0787
+  Step 4275/20000 - Train Loss: 0.0781 | Val: 0.0787
+  Step 4325/20000 - Train Loss: 0.0582 | Val: 0.0787
+  Step 4375/20000 - Train Loss: 0.0566 | Val: 0.0787
+  Step 4400/20000 - Train Loss: 0.1166 | Val: 0.0787
+  Step 4450/20000 - Train Loss: 0.0918 | Val: 0.0787
+  Step 4475/20000 - Train Loss: 0.1169 | Val: 0.0787
+  Step 4525/20000 - Train Loss: 0.0426 | Val: 0.0787
+  Step 4550/20000 - Train Loss: 0.0756 | Val: 0.0787
+  Step 4600/20000 - Train Loss: 0.0656 | Val: 0.0787
+  Step 4650/20000 - Train Loss: 0.0422 | Val: 0.0787
+  Step 4675/20000 - Train Loss: 0.0473 | Val: 0.0787
+  Step 4725/20000 - Train Loss: 0.0914 | Val: 0.0769
+  Step 4750/20000 - Train Loss: 0.0384 | Val: 0.0769
+  Step 4800/20000 - Train Loss: 0.1004 | Val: 0.0769
+  Step 4825/20000 - Train Loss: 0.0700 | Val: 0.0769
+  Step 4875/20000 - Train Loss: 0.0667 | Val: 0.0769
+  Step 4925/20000 - Train Loss: 0.0778 | Val: 0.0769
+  Step 4950/20000 - Train Loss: 0.1042 | Val: 0.0769
+  Step 5000/20000 - Train Loss: 0.1095 | Val: 0.0769
+  Step 5025/20000 - Train Loss: 0.0464 | Val: 0.0769
+  Step 5075/20000 - Train Loss: 0.0948 | Val: 0.0769
+  Step 5100/20000 - Train Loss: 0.0618 | Val: 0.0769
+  Step 5150/20000 - Train Loss: 0.0856 | Val: 0.0769
+  Step 5200/20000 - Train Loss: 0.0648 | Val: 0.0769
+  Step 5225/20000 - Train Loss: 0.0885 | Val: 0.0741
+  Step 5275/20000 - Train Loss: 0.0364 | Val: 0.0741
+  Step 5300/20000 - Train Loss: 0.0584 | Val: 0.0741
+  Step 5350/20000 - Train Loss: 0.0299 | Val: 0.0741
+  Step 5375/20000 - Train Loss: 0.0564 | Val: 0.0741
+  Step 5425/20000 - Train Loss: 0.0734 | Val: 0.0741
+  Step 5475/20000 - Train Loss: 0.0875 | Val: 0.0741
+  Step 5500/20000 - Train Loss: 0.0264 | Val: 0.0741
+  Step 5550/20000 - Train Loss: 0.0549 | Val: 0.0741
+  Step 5575/20000 - Train Loss: 0.1324 | Val: 0.0741
+  Step 5625/20000 - Train Loss: 0.0932 | Val: 0.0741
+  Step 5650/20000 - Train Loss: 0.0553 | Val: 0.0741
+  Step 5700/20000 - Train Loss: 0.0904 | Val: 0.0741
+  Step 5750/20000 - Train Loss: 0.0505 | Val: 0.0730
+  Step 5775/20000 - Train Loss: 0.0775 | Val: 0.0730
+  Step 5825/20000 - Train Loss: 0.0768 | Val: 0.0730
+  Step 5850/20000 - Train Loss: 0.0720 | Val: 0.0730
+  Step 5900/20000 - Train Loss: 0.0950 | Val: 0.0730
+  Step 5925/20000 - Train Loss: 0.0325 | Val: 0.0730
+  Step 5975/20000 - Train Loss: 0.0689 | Val: 0.0730
+  Step 6025/20000 - Train Loss: 0.1307 | Val: 0.0730
+  Step 6050/20000 - Train Loss: 0.0545 | Val: 0.0730
+  Step 6100/20000 - Train Loss: 0.1400 | Val: 0.0730
+  Step 6125/20000 - Train Loss: 0.1382 | Val: 0.0730
+  Step 6175/20000 - Train Loss: 0.0872 | Val: 0.0730
+  Step 6200/20000 - Train Loss: 0.0593 | Val: 0.0700
+  Step 6250/20000 - Train Loss: 0.1041 | Val: 0.0700
+  Step 6325/20000 - Train Loss: 0.0631 | Val: 0.0700
+  Step 6375/20000 - Train Loss: 0.0529 | Val: 0.0700
+  Step 6400/20000 - Train Loss: 0.1314 | Val: 0.0700
+  Step 6450/20000 - Train Loss: 0.0406 | Val: 0.0700
+  Step 6475/20000 - Train Loss: 0.0472 | Val: 0.0700
+  Step 6525/20000 - Train Loss: 0.0453 | Val: 0.0700
+  Step 6575/20000 - Train Loss: 0.0356 | Val: 0.0700
+  Step 6600/20000 - Train Loss: 0.0469 | Val: 0.0700
+  Step 6650/20000 - Train Loss: 0.0783 | Val: 0.0700
+  Step 6675/20000 - Train Loss: 0.0658 | Val: 0.0700
+  Step 6725/20000 - Train Loss: 0.0356 | Val: 0.0679
+  Step 6750/20000 - Train Loss: 0.0381 | Val: 0.0679
+  Step 6800/20000 - Train Loss: 0.1260 | Val: 0.0679
+  Step 6850/20000 - Train Loss: 0.0503 | Val: 0.0679
+  Step 6875/20000 - Train Loss: 0.0652 | Val: 0.0679
+  Step 6925/20000 - Train Loss: 0.0532 | Val: 0.0679
+  Step 6950/20000 - Train Loss: 0.0644 | Val: 0.0679
+  Step 7000/20000 - Train Loss: 0.0844 | Val: 0.0679
+  Step 7025/20000 - Train Loss: 0.0992 | Val: 0.0679
+  Step 7075/20000 - Train Loss: 0.0713 | Val: 0.0679
+  Step 7125/20000 - Train Loss: 0.0824 | Val: 0.0679
+  Step 7150/20000 - Train Loss: 0.0727 | Val: 0.0679
+  Step 7200/20000 - Train Loss: 0.0550 | Val: 0.0679
+  Step 7225/20000 - Train Loss: 0.0442 | Val: 0.0682
+  Step 7275/20000 - Train Loss: 0.0586 | Val: 0.0682
+  Step 7300/20000 - Train Loss: 0.0574 | Val: 0.0682
+  Step 7350/20000 - Train Loss: 0.0819 | Val: 0.0682
+  Step 7400/20000 - Train Loss: 0.0581 | Val: 0.0682
+  Step 7425/20000 - Train Loss: 0.1173 | Val: 0.0682
+  Step 7475/20000 - Train Loss: 0.1262 | Val: 0.0682
+  Step 7500/20000 - Train Loss: 0.0633 | Val: 0.0682
+  Step 7550/20000 - Train Loss: 0.0536 | Val: 0.0682
+  Step 7575/20000 - Train Loss: 0.0418 | Val: 0.0682
+  Step 7625/20000 - Train Loss: 0.0512 | Val: 0.0682
+  Step 7675/20000 - Train Loss: 0.0734 | Val: 0.0682
+  Step 7700/20000 - Train Loss: 0.0913 | Val: 0.0682
+  Step 7750/20000 - Train Loss: 0.0658 | Val: 0.0691
+  Step 7775/20000 - Train Loss: 0.1302 | Val: 0.0691
+  Step 7825/20000 - Train Loss: 0.1041 | Val: 0.0691
+  Step 7850/20000 - Train Loss: 0.1125 | Val: 0.0691
+  Step 7900/20000 - Train Loss: 0.0605 | Val: 0.0691
+  Step 7950/20000 - Train Loss: 0.0407 | Val: 0.0691
+  Step 7975/20000 - Train Loss: 0.0269 | Val: 0.0691
+  Step 8025/20000 - Train Loss: 0.1339 | Val: 0.0691
+  Step 8050/20000 - Train Loss: 0.0444 | Val: 0.0691
+  Step 8100/20000 - Train Loss: 0.0738 | Val: 0.0691
+  Step 8125/20000 - Train Loss: 0.0547 | Val: 0.0691
+  Step 8175/20000 - Train Loss: 0.1003 | Val: 0.0691
+  Step 8225/20000 - Train Loss: 0.0855 | Val: 0.0645
+  Step 8250/20000 - Train Loss: 0.0600 | Val: 0.0645
+  Step 8300/20000 - Train Loss: 0.1091 | Val: 0.0645
+  Step 8325/20000 - Train Loss: 0.0574 | Val: 0.0645
+  Step 8375/20000 - Train Loss: 0.0649 | Val: 0.0645
+  Step 8400/20000 - Train Loss: 0.0478 | Val: 0.0645
+  Step 8450/20000 - Train Loss: 0.0395 | Val: 0.0645
+  Step 8500/20000 - Train Loss: 0.0456 | Val: 0.0645
+  Step 8525/20000 - Train Loss: 0.0561 | Val: 0.0645
+  Step 8575/20000 - Train Loss: 0.0438 | Val: 0.0645
+  Step 8600/20000 - Train Loss: 0.0446 | Val: 0.0645
+  Step 8650/20000 - Train Loss: 0.0758 | Val: 0.0645
+  Step 8675/20000 - Train Loss: 0.0325 | Val: 0.0645
+  Step 8725/20000 - Train Loss: 0.0342 | Val: 0.0656
+  Step 8775/20000 - Train Loss: 0.0870 | Val: 0.0656
+  Step 8800/20000 - Train Loss: 0.0651 | Val: 0.0656
+  Step 8850/20000 - Train Loss: 0.0228 | Val: 0.0656
+  Step 8875/20000 - Train Loss: 0.0518 | Val: 0.0656
+  Step 8925/20000 - Train Loss: 0.0554 | Val: 0.0656
+  Step 8950/20000 - Train Loss: 0.0735 | Val: 0.0656
+  Step 9000/20000 - Train Loss: 0.0872 | Val: 0.0656
+  Step 9050/20000 - Train Loss: 0.0769 | Val: 0.0656
+  Step 9075/20000 - Train Loss: 0.1056 | Val: 0.0656
+  Step 9125/20000 - Train Loss: 0.1209 | Val: 0.0656
+  Step 9150/20000 - Train Loss: 0.0923 | Val: 0.0656
+  Step 9200/20000 - Train Loss: 0.0656 | Val: 0.0656
+  Step 9225/20000 - Train Loss: 0.0565 | Val: 0.0701
+  Step 9275/20000 - Train Loss: 0.0909 | Val: 0.0701
+  Step 9325/20000 - Train Loss: 0.1126 | Val: 0.0701
+  Step 9350/20000 - Train Loss: 0.0656 | Val: 0.0701
+  Step 9400/20000 - Train Loss: 0.1025 | Val: 0.0701
+  Step 9425/20000 - Train Loss: 0.0547 | Val: 0.0701
+  Step 9475/20000 - Train Loss: 0.0826 | Val: 0.0701
+  Step 9500/20000 - Train Loss: 0.0367 | Val: 0.0701
+  Step 9550/20000 - Train Loss: 0.0739 | Val: 0.0701
+  Step 9600/20000 - Train Loss: 0.0750 | Val: 0.0701
+  Step 9625/20000 - Train Loss: 0.0963 | Val: 0.0701
+  Step 9675/20000 - Train Loss: 0.0296 | Val: 0.0701
+  Step 9700/20000 - Train Loss: 0.0590 | Val: 0.0701
+  Step 9750/20000 - Train Loss: 0.1085 | Val: 0.0636
+  Step 9775/20000 - Train Loss: 0.0505 | Val: 0.0636
+  Step 9825/20000 - Train Loss: 0.0595 | Val: 0.0636
+  Step 9875/20000 - Train Loss: 0.0990 | Val: 0.0636
+  Step 9900/20000 - Train Loss: 0.0940 | Val: 0.0636
+  Step 9950/20000 - Train Loss: 0.0662 | Val: 0.0636
+  Step 9975/20000 - Train Loss: 0.0756 | Val: 0.0636
+  Step 10025/20000 - Train Loss: 0.0547 | Val: 0.0636
+  Step 10050/20000 - Train Loss: 0.0615 | Val: 0.0636
+  Step 10100/20000 - Train Loss: 0.0638 | Val: 0.0636
+  Step 10150/20000 - Train Loss: 0.0674 | Val: 0.0636
+  Step 10175/20000 - Train Loss: 0.0572 | Val: 0.0636
+  Step 10225/20000 - Train Loss: 0.0281 | Val: 0.0621
+  Step 10250/20000 - Train Loss: 0.0877 | Val: 0.0621
+  Step 10300/20000 - Train Loss: 0.0731 | Val: 0.0621
+  Step 10325/20000 - Train Loss: 0.0592 | Val: 0.0621
+  Step 10375/20000 - Train Loss: 0.1038 | Val: 0.0621
+  Step 10425/20000 - Train Loss: 0.0608 | Val: 0.0621
+  Step 10450/20000 - Train Loss: 0.0294 | Val: 0.0621
+  Step 10500/20000 - Train Loss: 0.0440 | Val: 0.0621
+  Step 10525/20000 - Train Loss: 0.0686 | Val: 0.0621
+  Step 10575/20000 - Train Loss: 0.0377 | Val: 0.0621
+  Step 10600/20000 - Train Loss: 0.0444 | Val: 0.0621
+  Step 10650/20000 - Train Loss: 0.0893 | Val: 0.0621
+  Step 10700/20000 - Train Loss: 0.0408 | Val: 0.0621
+  Step 10725/20000 - Train Loss: 0.0473 | Val: 0.0605
+  Step 10775/20000 - Train Loss: 0.0458 | Val: 0.0605
+  Step 10800/20000 - Train Loss: 0.0890 | Val: 0.0605
+  Step 10850/20000 - Train Loss: 0.0574 | Val: 0.0605
+  Step 10875/20000 - Train Loss: 0.0338 | Val: 0.0605
+  Step 10925/20000 - Train Loss: 0.0777 | Val: 0.0605
+  Step 10975/20000 - Train Loss: 0.0308 | Val: 0.0605
+  Step 11000/20000 - Train Loss: 0.0899 | Val: 0.0605
+  Step 11050/20000 - Train Loss: 0.0316 | Val: 0.0605
+  Step 11075/20000 - Train Loss: 0.0587 | Val: 0.0605
+  Step 11125/20000 - Train Loss: 0.0627 | Val: 0.0605
+  Step 11150/20000 - Train Loss: 0.0791 | Val: 0.0605
+  Step 11200/20000 - Train Loss: 0.0369 | Val: 0.0605
+  Step 11250/20000 - Train Loss: 0.0411 | Val: 0.0600
+  Step 11275/20000 - Train Loss: 0.0437 | Val: 0.0600
+  Step 11325/20000 - Train Loss: 0.0518 | Val: 0.0600
+  Step 11350/20000 - Train Loss: 0.0428 | Val: 0.0600
+  Step 11400/20000 - Train Loss: 0.0772 | Val: 0.0600
+  Step 11425/20000 - Train Loss: 0.0573 | Val: 0.0600
+  Step 11475/20000 - Train Loss: 0.1212 | Val: 0.0600
+  Step 11525/20000 - Train Loss: 0.0283 | Val: 0.0600
+  Step 11550/20000 - Train Loss: 0.0509 | Val: 0.0600
+  Step 11600/20000 - Train Loss: 0.1030 | Val: 0.0600
+  Step 11625/20000 - Train Loss: 0.0533 | Val: 0.0600
+  Step 11675/20000 - Train Loss: 0.0502 | Val: 0.0600
+  Step 11700/20000 - Train Loss: 0.0746 | Val: 0.0602
+  Step 11750/20000 - Train Loss: 0.0664 | Val: 0.0602
+  Step 11800/20000 - Train Loss: 0.0381 | Val: 0.0602
+  Step 11825/20000 - Train Loss: 0.0490 | Val: 0.0602
+  Step 11875/20000 - Train Loss: 0.0268 | Val: 0.0602
+  Step 11900/20000 - Train Loss: 0.0535 | Val: 0.0602
+  Step 11950/20000 - Train Loss: 0.0553 | Val: 0.0602
+  Step 11975/20000 - Train Loss: 0.0662 | Val: 0.0602
+  Step 12025/20000 - Train Loss: 0.0613 | Val: 0.0602
+  Step 12075/20000 - Train Loss: 0.0587 | Val: 0.0602
+  Step 12100/20000 - Train Loss: 0.0975 | Val: 0.0602
+  Step 12150/20000 - Train Loss: 0.0582 | Val: 0.0602
+  Step 12175/20000 - Train Loss: 0.0767 | Val: 0.0602
+  Step 12225/20000 - Train Loss: 0.0722 | Val: 0.0617
+  Step 12250/20000 - Train Loss: 0.0372 | Val: 0.0617
+  Step 12300/20000 - Train Loss: 0.0568 | Val: 0.0617
+  Step 12350/20000 - Train Loss: 0.0701 | Val: 0.0617
+  Step 12375/20000 - Train Loss: 0.0716 | Val: 0.0617
+  Step 12425/20000 - Train Loss: 0.0710 | Val: 0.0617
+  Step 12450/20000 - Train Loss: 0.0878 | Val: 0.0617
+  Step 12500/20000 - Train Loss: 0.0370 | Val: 0.0617
+  Step 12525/20000 - Train Loss: 0.0439 | Val: 0.0617
+  Step 12575/20000 - Train Loss: 0.0804 | Val: 0.0617
+  Step 12625/20000 - Train Loss: 0.0645 | Val: 0.0617
+  Step 12650/20000 - Train Loss: 0.1010 | Val: 0.0617
+  Step 12700/20000 - Train Loss: 0.0879 | Val: 0.0597
+  Step 12725/20000 - Train Loss: 0.0342 | Val: 0.0597
+  Step 12775/20000 - Train Loss: 0.0554 | Val: 0.0597
+  Step 12800/20000 - Train Loss: 0.0489 | Val: 0.0597
+  Step 12850/20000 - Train Loss: 0.1409 | Val: 0.0597
+  Step 12900/20000 - Train Loss: 0.0436 | Val: 0.0597
+  Step 12925/20000 - Train Loss: 0.0768 | Val: 0.0597
+  Step 12975/20000 - Train Loss: 0.0986 | Val: 0.0597
+  Step 13000/20000 - Train Loss: 0.0778 | Val: 0.0597
+  Step 13050/20000 - Train Loss: 0.0418 | Val: 0.0597
+  Step 13075/20000 - Train Loss: 0.0701 | Val: 0.0597
+  Step 13125/20000 - Train Loss: 0.0680 | Val: 0.0597
+  Step 13175/20000 - Train Loss: 0.0697 | Val: 0.0597
+  Step 13200/20000 - Train Loss: 0.0636 | Val: 0.0597
+  Step 13250/20000 - Train Loss: 0.0529 | Val: 0.0579
+  Step 13275/20000 - Train Loss: 0.0876 | Val: 0.0579
+  Step 13325/20000 - Train Loss: 0.0644 | Val: 0.0579
+  Step 13350/20000 - Train Loss: 0.1036 | Val: 0.0579
+  Step 13400/20000 - Train Loss: 0.0460 | Val: 0.0579
+  Step 13450/20000 - Train Loss: 0.0549 | Val: 0.0579
+  Step 13475/20000 - Train Loss: 0.0583 | Val: 0.0579
+  Step 13525/20000 - Train Loss: 0.0265 | Val: 0.0579
+  Step 13550/20000 - Train Loss: 0.0644 | Val: 0.0579
+  Step 13600/20000 - Train Loss: 0.0565 | Val: 0.0579
+  Step 13625/20000 - Train Loss: 0.1023 | Val: 0.0579
+  Step 13675/20000 - Train Loss: 0.0985 | Val: 0.0579
+  Step 13725/20000 - Train Loss: 0.0365 | Val: 0.0584
+  Step 13750/20000 - Train Loss: 0.0330 | Val: 0.0584
+  Step 13800/20000 - Train Loss: 0.0786 | Val: 0.0584
+  Step 13825/20000 - Train Loss: 0.0419 | Val: 0.0584
+  Step 13875/20000 - Train Loss: 0.0509 | Val: 0.0584
+  Step 13900/20000 - Train Loss: 0.0722 | Val: 0.0584
+  Step 13950/20000 - Train Loss: 0.0486 | Val: 0.0584
+  Step 14000/20000 - Train Loss: 0.0688 | Val: 0.0584
+  Step 14025/20000 - Train Loss: 0.0838 | Val: 0.0584
+  Step 14075/20000 - Train Loss: 0.0515 | Val: 0.0584
+  Step 14100/20000 - Train Loss: 0.0991 | Val: 0.0584
+  Step 14150/20000 - Train Loss: 0.0995 | Val: 0.0584
+  Step 14175/20000 - Train Loss: 0.0659 | Val: 0.0584
+  Step 14225/20000 - Train Loss: 0.0543 | Val: 0.0589
+  Step 14275/20000 - Train Loss: 0.0773 | Val: 0.0589
+  Step 14300/20000 - Train Loss: 0.0751 | Val: 0.0589
+  Step 14350/20000 - Train Loss: 0.0600 | Val: 0.0589
+  Step 14375/20000 - Train Loss: 0.0777 | Val: 0.0589
+  Step 14425/20000 - Train Loss: 0.0560 | Val: 0.0589
+  Step 14450/20000 - Train Loss: 0.0955 | Val: 0.0589
+  Step 14500/20000 - Train Loss: 0.0615 | Val: 0.0589
+  Step 14550/20000 - Train Loss: 0.0382 | Val: 0.0589
+  Step 14575/20000 - Train Loss: 0.0516 | Val: 0.0589
+  Step 14625/20000 - Train Loss: 0.0643 | Val: 0.0589
+  Step 14650/20000 - Train Loss: 0.0455 | Val: 0.0589
+  Step 14700/20000 - Train Loss: 0.0473 | Val: 0.0589
+  Step 14725/20000 - Train Loss: 0.0271 | Val: 0.0610
+  Step 14775/20000 - Train Loss: 0.0287 | Val: 0.0610
+  Step 14825/20000 - Train Loss: 0.0619 | Val: 0.0610
+  Step 14850/20000 - Train Loss: 0.0663 | Val: 0.0610
+  Step 14900/20000 - Train Loss: 0.0578 | Val: 0.0610
+  Step 14925/20000 - Train Loss: 0.0577 | Val: 0.0610
+  Step 14975/20000 - Train Loss: 0.1248 | Val: 0.0610
+  Step 15000/20000 - Train Loss: 0.0378 | Val: 0.0610
+  Step 15050/20000 - Train Loss: 0.1301 | Val: 0.0610
+  Step 15100/20000 - Train Loss: 0.0768 | Val: 0.0610
+  Step 15125/20000 - Train Loss: 0.0732 | Val: 0.0610
+  Step 15175/20000 - Train Loss: 0.0684 | Val: 0.0610
+  Step 15200/20000 - Train Loss: 0.0647 | Val: 0.0610
+  Step 15250/20000 - Train Loss: 0.0558 | Val: 0.0579
+  Step 15275/20000 - Train Loss: 0.0780 | Val: 0.0579
+  Step 15325/20000 - Train Loss: 0.0539 | Val: 0.0579
+  Step 15375/20000 - Train Loss: 0.1109 | Val: 0.0579
+  Step 15400/20000 - Train Loss: 0.0328 | Val: 0.0579
+  Step 15450/20000 - Train Loss: 0.0738 | Val: 0.0579
+  Step 15475/20000 - Train Loss: 0.0527 | Val: 0.0579
+  Step 15525/20000 - Train Loss: 0.0834 | Val: 0.0579
+  Step 15550/20000 - Train Loss: 0.0296 | Val: 0.0579
+  Step 15600/20000 - Train Loss: 0.0484 | Val: 0.0579
+  Step 15650/20000 - Train Loss: 0.0733 | Val: 0.0579
+  Step 15675/20000 - Train Loss: 0.0833 | Val: 0.0579
+  Step 15725/20000 - Train Loss: 0.0627 | Val: 0.0581
+  Step 15750/20000 - Train Loss: 0.0990 | Val: 0.0581
+  Step 15800/20000 - Train Loss: 0.0450 | Val: 0.0581
+  Step 15825/20000 - Train Loss: 0.0379 | Val: 0.0581
+  Step 15875/20000 - Train Loss: 0.0225 | Val: 0.0581
+  Step 15925/20000 - Train Loss: 0.0880 | Val: 0.0581
+  Step 15950/20000 - Train Loss: 0.0649 | Val: 0.0581
+  Step 16000/20000 - Train Loss: 0.0506 | Val: 0.0581
+  Step 16025/20000 - Train Loss: 0.0523 | Val: 0.0581
+  Step 16075/20000 - Train Loss: 0.0476 | Val: 0.0581
+  Step 16100/20000 - Train Loss: 0.0504 | Val: 0.0581
+  Step 16150/20000 - Train Loss: 0.1408 | Val: 0.0581
+  Step 16200/20000 - Train Loss: 0.0562 | Val: 0.0581
+  Step 16225/20000 - Train Loss: 0.0726 | Val: 0.0567
+  Step 16275/20000 - Train Loss: 0.0446 | Val: 0.0567
+  Step 16300/20000 - Train Loss: 0.0488 | Val: 0.0567
+  Step 16350/20000 - Train Loss: 0.0821 | Val: 0.0567
+  Step 16375/20000 - Train Loss: 0.1354 | Val: 0.0567
+  Step 16425/20000 - Train Loss: 0.0335 | Val: 0.0567
+  Step 16475/20000 - Train Loss: 0.0296 | Val: 0.0567
+  Step 16500/20000 - Train Loss: 0.0409 | Val: 0.0567
+  Step 16550/20000 - Train Loss: 0.0584 | Val: 0.0567
+  Step 16575/20000 - Train Loss: 0.1014 | Val: 0.0567
+  Step 16625/20000 - Train Loss: 0.0410 | Val: 0.0567
+  Step 16650/20000 - Train Loss: 0.0316 | Val: 0.0567
+  Step 16700/20000 - Train Loss: 0.0915 | Val: 0.0567
+  Step 16750/20000 - Train Loss: 0.0342 | Val: 0.0577
+  Step 16775/20000 - Train Loss: 0.0407 | Val: 0.0577
+  Step 16825/20000 - Train Loss: 0.0809 | Val: 0.0577
+  Step 16850/20000 - Train Loss: 0.0279 | Val: 0.0577
+  Step 16900/20000 - Train Loss: 0.0518 | Val: 0.0577
+  Step 16925/20000 - Train Loss: 0.0813 | Val: 0.0577
+  Step 16975/20000 - Train Loss: 0.0420 | Val: 0.0577
+  Step 17025/20000 - Train Loss: 0.0454 | Val: 0.0577
+  Step 17050/20000 - Train Loss: 0.0565 | Val: 0.0577
+  Step 17100/20000 - Train Loss: 0.0458 | Val: 0.0577
+  Step 17125/20000 - Train Loss: 0.0835 | Val: 0.0577
+  Step 17175/20000 - Train Loss: 0.0525 | Val: 0.0577
+  Step 17200/20000 - Train Loss: 0.0589 | Val: 0.0577
+  Step 17250/20000 - Train Loss: 0.0594 | Val: 0.0574
+  Step 17300/20000 - Train Loss: 0.0811 | Val: 0.0574
+  Step 17325/20000 - Train Loss: 0.0383 | Val: 0.0574
+  Step 17375/20000 - Train Loss: 0.0666 | Val: 0.0574
+  Step 17400/20000 - Train Loss: 0.0852 | Val: 0.0574
+  Step 17450/20000 - Train Loss: 0.1088 | Val: 0.0574
+  Step 17475/20000 - Train Loss: 0.1180 | Val: 0.0574
+  Step 17525/20000 - Train Loss: 0.0569 | Val: 0.0574
+  Step 17575/20000 - Train Loss: 0.0378 | Val: 0.0574
+  Step 17600/20000 - Train Loss: 0.0378 | Val: 0.0574
+  Step 17650/20000 - Train Loss: 0.0746 | Val: 0.0574
+  Step 17675/20000 - Train Loss: 0.0711 | Val: 0.0574
+  Step 17725/20000 - Train Loss: 0.0871 | Val: 0.0574
+  Step 17750/20000 - Train Loss: 0.0285 | Val: 0.0568
+  Step 17800/20000 - Train Loss: 0.0339 | Val: 0.0568
+  Step 17850/20000 - Train Loss: 0.0772 | Val: 0.0568
+  Step 17875/20000 - Train Loss: 0.0363 | Val: 0.0568
+  Step 17925/20000 - Train Loss: 0.0327 | Val: 0.0568
+  Step 17950/20000 - Train Loss: 0.0881 | Val: 0.0568
+  Step 18000/20000 - Train Loss: 0.0259 | Val: 0.0568
+  Step 18025/20000 - Train Loss: 0.0578 | Val: 0.0568
+  Step 18075/20000 - Train Loss: 0.0416 | Val: 0.0568
+  Step 18125/20000 - Train Loss: 0.0640 | Val: 0.0568
+  Step 18150/20000 - Train Loss: 0.0510 | Val: 0.0568
+  Step 18200/20000 - Train Loss: 0.0775 | Val: 0.0568
+  Step 18225/20000 - Train Loss: 0.1285 | Val: 0.0568
+  Step 18275/20000 - Train Loss: 0.0680 | Val: 0.0564
+  Step 18300/20000 - Train Loss: 0.0580 | Val: 0.0564
+  Step 18350/20000 - Train Loss: 0.0705 | Val: 0.0564
+  Step 18400/20000 - Train Loss: 0.0681 | Val: 0.0564
+  Step 18425/20000 - Train Loss: 0.0447 | Val: 0.0564
+  Step 18475/20000 - Train Loss: 0.0765 | Val: 0.0564
+  Step 18500/20000 - Train Loss: 0.0413 | Val: 0.0564
+  Step 18550/20000 - Train Loss: 0.0743 | Val: 0.0564
+  Step 18575/20000 - Train Loss: 0.0879 | Val: 0.0564
+  Step 18625/20000 - Train Loss: 0.0571 | Val: 0.0564
+  Step 18675/20000 - Train Loss: 0.0314 | Val: 0.0564
+  Step 18700/20000 - Train Loss: 0.0827 | Val: 0.0564
+  Step 18750/20000 - Train Loss: 0.0436 | Val: 0.0565
+  Step 18775/20000 - Train Loss: 0.0432 | Val: 0.0565
+  Step 18825/20000 - Train Loss: 0.0650 | Val: 0.0565
+  Step 18850/20000 - Train Loss: 0.1067 | Val: 0.0565
+  Step 18900/20000 - Train Loss: 0.1073 | Val: 0.0565
+  Step 18950/20000 - Train Loss: 0.0516 | Val: 0.0565
+  Step 18975/20000 - Train Loss: 0.0320 | Val: 0.0565
+  Step 19025/20000 - Train Loss: 0.0424 | Val: 0.0565
+  Step 19050/20000 - Train Loss: 0.0352 | Val: 0.0565
+  Step 19100/20000 - Train Loss: 0.0484 | Val: 0.0565
+  Step 19125/20000 - Train Loss: 0.0648 | Val: 0.0565
+  Step 19175/20000 - Train Loss: 0.0905 | Val: 0.0565
+  Step 19225/20000 - Train Loss: 0.0545 | Val: 0.0565
+  Step 19250/20000 - Train Loss: 0.0741 | Val: 0.0569
+  Step 19300/20000 - Train Loss: 0.0407 | Val: 0.0569
+  Step 19325/20000 - Train Loss: 0.0665 | Val: 0.0569
+  Step 19375/20000 - Train Loss: 0.0762 | Val: 0.0569
+  Step 19400/20000 - Train Loss: 0.0831 | Val: 0.0569
+  Step 19450/20000 - Train Loss: 0.0748 | Val: 0.0569
+  Step 19500/20000 - Train Loss: 0.0422 | Val: 0.0569
+  Step 19525/20000 - Train Loss: 0.0636 | Val: 0.0569
+  Step 19575/20000 - Train Loss: 0.0491 | Val: 0.0569
+  Step 19600/20000 - Train Loss: 0.0881 | Val: 0.0569
+  Step 19650/20000 - Train Loss: 0.1131 | Val: 0.0569
+  Step 19675/20000 - Train Loss: 0.0309 | Val: 0.0569
+  Step 19725/20000 - Train Loss: 0.0706 | Val: 0.0569
+  Step 19775/20000 - Train Loss: 0.0645 | Val: 0.0567
+  Step 19800/20000 - Train Loss: 0.0484 | Val: 0.0567
+  Step 19850/20000 - Train Loss: 0.0676 | Val: 0.0567
+  Step 19875/20000 - Train Loss: 0.0616 | Val: 0.0567
+  Step 19925/20000 - Train Loss: 0.0343 | Val: 0.0567
+  Step 19950/20000 - Train Loss: 0.0814 | Val: 0.0567
+  Waiting for final validation evaluation...
+  Eval thread completed normally
+----------------------------------------
+Training complete
+
+  Extracting training metrics...
+  Captured 798 training loss values
+  Captured 40 validation loss values
+  Training loss progression:
+    Step     25: 0.7071
+    Step   5000: 0.1095
+    Step  10000: 0.0440
+    Step  14975: 0.1248
+    Step  19950: 0.0814
+  Minimum training loss: 0.0225 at step 15875
+STAGE 5/6: Exporting model...
+  Exported to: /tmp/limelight_train_k5mfosdt/exported/saved_model
+  Converting to float TFLite...
+
+STAGE 6/6: Quantizing and compiling...
+  Extracting calibration images from training data...
+  Extracted 100 calibration images
+  Found 100 sample images for quantization
+  Inspecting saved model...
+  Model output 0: shape=[ 1 10], dtype=<class 'numpy.float32'>
+  Model output 1: shape=[ 1 10  4], dtype=<class 'numpy.float32'>
+  Model output 2: shape=[1], dtype=<class 'numpy.float32'>
+  Model output 3: shape=[ 1 10], dtype=<class 'numpy.float32'>
+  Running INT8 quantization...
+  INT8 quantization successful!
+  INT8 model: 4.99 MB
+  Compiling for Coral EdgeTPU...
+  Coral model: 5.28 MB
+
+============================================================
+TRAINING COMPLETE
+============================================================
+  Generating training loss graph...
+    Training loss range: 0.0225 to 0.7071
+    Validation loss range: 0.0564 to 0.8979
+  Loss graph generated (139.8 KB)
+  Saving results to storage...
