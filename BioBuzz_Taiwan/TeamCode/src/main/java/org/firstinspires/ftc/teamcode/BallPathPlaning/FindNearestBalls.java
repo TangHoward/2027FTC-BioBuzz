@@ -7,13 +7,16 @@ public class FindNearestBalls {
     private Follower follower;
     private double[][] Dist_Map = new double[144][144];
     private Pose[][] obstacle;
-    private static final int OBSTACLE = -1;
-    private static final int UNVISITED = Integer.MAX_VALUE;
     /* example
         {
             {new Pose(0,72), new Pose(144,144)},
         }
      */
+    private static final int OBSTACLE = -1;
+    private static final double ROBOT_RADIUS = 9; // inch
+    private static final double SAFETY_MARGIN = 3; // inch
+    private static final int UNVISITED = Integer.MAX_VALUE;
+
     public void update(){
 
     }
@@ -34,6 +37,7 @@ public class FindNearestBalls {
         return null;
     }
     private boolean isObstacleCell(int x, int y) {
+        if(x< ROBOT_RADIUS + SAFETY_MARGIN || x> Dist_Map.length - (ROBOT_RADIUS + SAFETY_MARGIN))
         for (Pose[] rect : obstacle) {
             double minX = Math.min(rect[0].x(), rect[1].x());
             double maxX = Math.max(rect[0].x(), rect[1].x());
